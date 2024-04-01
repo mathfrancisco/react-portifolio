@@ -1,4 +1,4 @@
-import React from "react"
+// import React from "react"
 
 import styles from "./about.module.css";
 import { getImageUrl } from "../../utils";
@@ -19,7 +19,7 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Frontend Developer</h3>
               <p>
-                I'm a frontend developer with experience in building responsive
+                Im a frontend developer with experience in building responsive
                 and optimized sites
               </p>
             </div>
