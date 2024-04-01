@@ -1,24 +1,28 @@
+// import React from "react";
+
 import styles from "./project.card.module.css";
 import { getImageUrl } from "../../utils";
 
-export const ProjectCard = ({
-  project: { title, imagesrc, description, skills, demo, source },
+export const projectcard = ({
+  project: {title, imageSrc, description, skills, demo, source },
 }) => {
   return (
     <div className={styles.container}>
       <img
-        src={getImageUrl(imagesrc)}
+        src={getImageUrl(imageSrc)}
         alt={`/Image of ${title}`}
         className={styles.image}
       />
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
       <ul className={styles.skills}>
-        {skills.map((skill, id) => (
-          <li key={id} className={styles.skill}>
-            {skill}
-          </li>
-        ))}
+        {skills.map((skill, id) => {
+          return (
+            <li key={id} className={styles.skill}>
+              {skill}
+            </li>
+          );
+        })}
       </ul>
       <div className={styles.links}>
         <a href={demo} className={styles.link}>
@@ -31,5 +35,3 @@ export const ProjectCard = ({
     </div>
   );
 };
-
-
