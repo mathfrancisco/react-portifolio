@@ -3,7 +3,7 @@
 import styles from "./project.card.module.css";
 import { getImageUrl } from "../../utils";
 
-export const projectcard = ({
+export const ProjectCard = ({
   project: {title, imageSrc, description, skills, demo, source },
 }) => {
   return (
