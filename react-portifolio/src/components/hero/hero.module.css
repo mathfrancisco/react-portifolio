@@ -39,6 +39,11 @@
   margin-bottom: 52px;
 }
 
+.description p {
+  margin: 0;
+  text-align: center;
+}
+
 .contactBtn {
   text-decoration: none;
   background-color: var(--color-primary);
