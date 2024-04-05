@@ -1,5 +1,6 @@
+/* Importando as cores do arquivo var.css */
 @import "./var.css";
-
+/* Definindo o estilo da página principal (App) */
 .App {
   background-color: var(--color-bg);
   width: 100%;
