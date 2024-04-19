@@ -11,6 +11,7 @@ import './index.css'
 import "@fontsource/outfit"
 import "@fontsource/roboto"
 
+
 // Cria uma "raiz" React no elemento HTML com id "root" e renderiza o componente App dentro da "raiz" em modo estrito
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -1,21 +1,25 @@
 import i18n  from 'i18next'
-import { Translation, initReactI18next } from 'react-i18next';
+import {  initReactI18next } from 'react-i18next'
+import enJson from "./translations/en.json"
+import ptBRJson from "./translation/ptBR.json";
+import App from '../app';
 
 i18n.use(initReactI18next).init({
   fallbackLng:"en",
-  {
-    interpolation:{
+  interpolation:
+    {
       escapeValue:false
     },
-    resources:{
-      en:{
-        Translation:{
-        welcome:"Welcome to the best webapp in the world",
-      },},
-      pt:{
-        Translation:{
-        welcome:"Welcome to the best webapp in the world",
-      },},
+    resources: {
+      en:enJson,
+      ptBr:ptBRJson,
     },
-  },
 });
+
+export default App;
+
+
+const { t,i18n }= useTranslation();
+const changeLanguage=(lng) =>{
+  i18n.changeLanguage(lng);
+}
