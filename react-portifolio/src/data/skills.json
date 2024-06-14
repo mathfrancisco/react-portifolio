@@ -28,14 +28,6 @@
     "imageSrc": "skills/postgresql.png"
   },
   {
-    "title": "HTML",
-    "imageSrc": "skills/html.png"
-  },
-  {
-    "title": "CSS",
-    "imageSrc": "skills/css.png"
-  },
-  {
     "title": "Figma",
     "imageSrc": "skills/figma.png"
   }
