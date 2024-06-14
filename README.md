@@ -18,6 +18,6 @@ HTML5
 Back-end:
 Node.js
 Express.js
-MongoDB (opcional)
+
   </p>
 
